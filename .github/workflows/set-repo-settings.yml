@@ -1,0 +1,58 @@
+name: Apply Repo Settings
+on:
+  repository_dispatch:
+  workflow_dispatch:
+
+jobs:
+  apply-settings:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Set branch protection
+      - name: Set branch protection
+        uses: octokit/request-action@v2.x
+        with:
+          route: PUT /repos/:owner/:repo/branches/master/protection
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          required_pull_request_reviews:
+            dismiss_stale_reviews: true # Vereist goedkeuring na de meest recente push
+          required_status_checks:
+            strict: true # Vereist dat branches up-to-date zijn
+            contexts: 
+              - check-broken-links
+              - check-external-links
+              - enforce-file-formats
+          enforce_admins: true
+          restrictions: null
+          require_conversation_resolution: true # Vereist dat alle gesprekken zijn opgelost
+          required_linear_history: true # Vereist lineaire geschiedenis
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 2. Set repository settings
+      - name: Set repository settings
+        uses: octokit/request-action@v2.x
+        with:
+          route: PATCH /repos/:owner/:repo
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          has_wiki: false
+          has_projects: false
+          allow_squash_merge: true
+          allow_rebase_merge: false
+          allow_merge_commit: false
+          delete_branch_on_merge: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 3. Require up-to-date branches before merging
+      - name: Require up-to-date branches
+        uses: octokit/request-action@v2.x
+        with:
+          route: PUT /repos/:owner/:repo/branches/master/protection
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          required_status_checks:
+            strict: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

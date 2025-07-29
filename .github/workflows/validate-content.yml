@@ -1,0 +1,73 @@
+name: Validate Repository Content
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  check-broken-links:
+    name: Check Broken Links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Linkinator
+        uses: JustinBeckwith/linkinator-action@v1
+        with:
+          args: -r ./
+
+  check-disallowed-links:
+    name: Check for Disallowed Links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Zoek naar disallowed links
+        run: |
+          echo "⏳ Controleren op absolute of externe links..."
+
+          # Dynamisch eigen repo-pad ophalen
+          REPO_URL="https://github.com/${GITHUB_REPOSITORY}"
+
+          if grep -r -E "${REPO_URL}/blob/" .; then
+            echo "❌ Blob-links naar eigen repo gevonden. Gebruik relatieve paden."
+            exit 1
+          fi
+
+          if grep -r -E "https?://(?!localhost|127\.0\.0\.1|github\.com/${GITHUB_REPOSITORY})" . \
+            | grep -Ei "\.(png|jpe?g|gif|pdf|docx?)"; then
+            echo "❌ Externe absolute links naar mediabestanden gevonden. Zet ze lokaal en gebruik relatieve paden."
+            exit 1
+          fi
+
+          echo "✅ Geen disallowed links gevonden."
+
+  enforce-plaintext-formats:
+    name: Block Non-Plaintext File Formats
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Zoek naar niet-tekstuele bestandstypen
+        run: |
+          echo "⏳ Controleren op verboden binaire bestandsformaten..."
+
+          forbidden_files=$(find . -type f \( \
+            -name "*.docx" -o -name "*.pptx" -o -name "*.xlsx" -o \
+            -name "*.odt" -o -name "*.odp" -o -name "*.ods" -o \
+            -name "*.pages" -o -name "*.numbers" -o -name "*.key" \
+          \))
+
+          if [ -n "$forbidden_files" ]; then
+            echo "❌ Gevonden verboden bestanden:"
+            echo "$forbidden_files"
+            echo "📌 Gebruik enkel platte tekstformaten zoals .md, .txt, .csv, .json, .yaml, ..."
+            exit 1
+          fi
+
+          echo "✅ Geen verboden bestanden gevonden."
