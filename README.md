@@ -1,66 +1,81 @@
-# Naam van het project
+<p align="center">
+  <a href="https://github.com/MauroDeBruyn/realtimeMultiSensorLogger">
+    <img alt="Stars" src="https://img.shields.io/github/stars/MauroDeBruyn/realtimeMultiSensorLogger">
+  </a>
+  
+  <a href="https://github.com/MauroDeBruyn/">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/MauroDeBruyn/realtimeMultiSensorLogger">
+  </a>
+
+  <a href="https://github.com/MauroDeBruyn/">
+    <img alt="made by Mauro De Bruyn" src="https://img.shields.io/badge/made%20by-Mauro%20De Bruyn-ff69b4">
+  </a>
+</p>
+
+# Real-Time multi data sensor logger
 
 ![Overzicht](./resources/media/Overview.jpg)
 
-## Over het project
+## About the Project
 
-Korte beschrijving van het project: wat is het, waarom is het gemaakt, en wat is de algemene doelstelling?
+This project will utilize the PSoC 6 pioneer Kit (CY8CKIT-062-WiFi-BT) to collect data and show it on the build in display.
 
-### Sequence of operation
+### Sequence of Operation
 
-Beschrijf kort wat je verwacht nadat alle hardware en software zijn opgezet volgens de stappen onder **Getting Started**. Deze sectie dient als handleiding voor niet-technische gebruikers.
+This section explains what to expect once all hardware and software has been set up according to **Getting Started**. It is intended as a guide for non-technical users.
 
-1. Verbind het bord met de computer via USB.
-2. De groene LED schakelt automatisch in om aan te geven dat het systeem actief is.
-3. In de seriële terminal verschijnt een welkomstbericht.
-4. De lineaire slider voert een automatische kalibratie uit en beweegt zichzelf naar het midden.
-5. Wacht tot een piepsignaal klinkt en plaats daarna de telefoon op de houder van de slider.
+1. Connect the board to your computer via USB.
+2. The green LED will automatically turn on to indicate the system is active.
+3. A welcome message will appear in the serial terminal.
+4. The linear slider performs an automatic calibration and moves to the center.
+5. Wait for a beep signal and then place the phone on the slider holder.
 
-Volg eventueel verdere aanwijzingen die in de terminal worden weergegeven of op de interface te zien zijn.
+Follow any additional instructions shown in the terminal or on the interface.
 
 
 
-## Materialen en methodes
+## Materials and Methods
 
-> 💡**Werk op een versiebeheer-vriendelijke manier**
+> 💡**Version-Control-Friendly Practices**
 >
-> Gebruik **platte tekstformaten** zoals Markdown of CSV-bestanden. Deze zijn leesbaar in GitHub en goed te volgen in versiebeheer.
+> Use **plain text formats** like Markdown or CSV files. These are readable on GitHub and well-suited for version control.
 >
-> Vermijd het gebruik van externe links naar afbeeldingen of bestanden (zoals datasheets of documenten). Voeg deze lokaal toe in bijvoorbeeld een `media` of `datasheets` map. Externe links kunnen breken wanneer de originele bron verdwijnt of als deze repository wordt hernoemd, geforkt of offline gehaald.
+> Avoid linking to external files (e.g. datasheets or images). Instead, store them locally in a `media` or `datasheets` folder. External links can break when the source changes or if this repository is renamed, forked, or cloned.
 
+#### Hardware
+- **PSoC 6 Pioneer Kit**: (CY8CKIT-062-WiFi-BT)
 
-- **Hardware**: lijst van gebruikte componenten (bv. sensoren, microcontrollers, actuatoren).
-- **Software**: overzicht van programmeertalen, libraries en tools.
-- **Methodologie**: korte beschrijving van de werkwijze.
-
-
-
-## Resultaten
-
-- Korte samenvatting van de belangrijkste bevindingen.
-- Eventuele grafieken, tabellen of afbeeldingen.
-- Reflectie op prestaties of betrouwbaarheid.
+#### Software
+- **Software**: overview of languages, libraries and tools used.
+- **Methodology**: brief description of the approach taken.
 
 
 
-## Aan de slag
+## Results
 
-Niets zo frustrerend als goede code vinden zonder uitleg over hoe je het aan de praat krijgt.
-
-- [ ] Voeg hier een stapsgewijze handleiding toe.
-- [ ] Leg uit hoe je het programma start.
-
-
-
-## Toekomstig werk en problemen
-
-- Mogelijke uitbreidingen of verbeteringen.
-- Bekende bugs of beperkingen.
-- Link eventueel naar een issue bv. #1
+- Summary of key findings.
+- Include charts, tables, or images as needed.
+- Reflections on performance or reliability.
 
 
 
-## Personen
+## Getting Started
 
-- **Contri Butor1** – _Student_ – [GitHub](https://github.com/CONTRIBUTOR1)
-- **Dieter Vanrykel** – _Docent_ – [GitHub](https://github.com/Vanrykel)
+Nothing more frustrating than finding good code but not knowing how to run it.
+
+- [ ] Provide a step-by-step how-to guide here.
+- [ ] Explain how to run the program.
+
+
+
+## Future Work and Issues
+
+- Planned extensions or improvements.
+- Known bugs or limitations.
+- Link to a issue if applicable, for example #1
+
+
+
+## People
+
+- **Contri Butor1** – Mauro De Bruyn – [GitHub](https://github.com/CONTRIBUTOR1)
