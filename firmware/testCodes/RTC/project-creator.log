@@ -1,0 +1,231 @@
+Loading the ModusToolbox Technology Packs and Early Access Packs
+Finished loading the ModusToolbox Technology Packs and Early Access Packs (4 ms)
+Loading the tools information
+Finished loading the tools information (41 ms)
+Loading the manifest data
+Found environment variable CyRemoteManifestOverride=C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-super-manifest-fv2.xml
+Loading super manfiest files from all sources
+Getting manifests from remote and/or local sources
+Processing system manifest 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-super-manifest-fv2.xml'
+Downloading super manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-super-manifest-fv2.xml'
+Finished loading super manifest files from all sources
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-super-manifest-fv2.xml'
+Starting to parse super manifest with URL 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-super-manifest-fv2.xml'
+Finished parsing super manifest with URL 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-super-manifest-fv2.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-ce-manifest.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-ce-manifest-fv2.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-app-manifest.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-app-manifest-fv2.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bsp-manifest.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bsp-manifest-fv2.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bsp-dependencies-manifest.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-bsp-manifest.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-bsp-manifest-fv2.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-bsp-dependencies-manifest.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-mw-manifest.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-mw-manifest-fv2.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-mw-dependencies-manifest.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-mw-manifest.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-mw-manifest-fv2.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-mw-dependencies-manifest.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-wifi-mw-manifest.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-wifi-mw-manifest-fv2.xml'
+Downloading manifest file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-wifi-mw-dependencies-manifest.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-ce-manifest.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-ce-manifest-fv2.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-app-manifest.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-app-manifest-fv2.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bsp-manifest.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bsp-manifest-fv2.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bsp-dependencies-manifest.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-bsp-manifest.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-bsp-manifest-fv2.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-bsp-dependencies-manifest.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-mw-manifest.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-mw-manifest-fv2.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-mw-dependencies-manifest.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-mw-manifest.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-mw-manifest-fv2.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-bt-mw-dependencies-manifest.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-wifi-mw-manifest.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-wifi-mw-manifest-fv2.xml'
+Finished download of file 'file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-wifi-mw-dependencies-manifest.xml'
+Finished loading the manifest data (798 ms)
+WARNING:Invalid capability token "cyw9p62s1-43012evb-01" found in manifest. [url: file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-ce-manifest-fv2.xml, line: 5422]
+WARNING:Invalid capability token "cyw9p62s1-43438evb-01" found in manifest. [url: file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-ce-manifest-fv2.xml, line: 5422]
+WARNING:Invalid capability token "cy8ckit-062-wifi-bt" found in manifest. [url: file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-ce-manifest-fv2.xml, line: 5422]
+WARNING:Invalid capability token "cy8ceval-062s2-mur-43439m2" found in manifest. [url: file:///C:/School/Academiejaar_2021-22/Digitale_systemen/.modustoolbox/mtb-ce-manifest-fv2.xml, line: 5422]
+
+0 error(s), 4 warning(s)
+
+Summary: 
+
+BSP: CY8CKIT-062-WIFI-BT
+Template Application(s): RTC Basics
+Note: The 'RTC Basics' application template(s) use(s) the ModusToolbox 2.x format. The application(s) do(es) not support 3.x features. See KBA236134 for instructions on how to migrate the application(s) for 3.x content compatibility.
+Application(s) Root Path: C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC
+
+Press "Create" to create the selected application(s).
+
+Collecting application data...
+
+Info: The following entered on the command line will create the exact same project as that created with the GUI tool:
+C:/Users/mauro/ModusToolbox/tools_3.2/project-creator/project-creator-cli.exe --board-id CY8CKIT-062-WIFI-BT --board-uri https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062-WIFI-BT --board-commit latest-v2.X --app-id mtb-example-psoc6-rtc-basics --app-uri https://github.com/cypresssemiconductorco/mtb-example-psoc6-rtc-basics --app-commit latest-v2.X --target-dir C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC --user-app-name RTC --use-modus-shell
+
+Starting application creation for 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC'.
+Acquiring the application source 'https://github.com/cypresssemiconductorco/mtb-example-psoc6-rtc-basics'.
+Acquired application source successfully.
+Loading the application.
+Loaded the application successfully.
+Processing project 'RTC'.
+Starting to commit changes to the filesystem and project 'mtb-example-psoc6-rtc-basics'.
+Removed the file 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/deps/TARGET_CY8CPROTO-062-4343W.mtb'.
+Writing mtb file for asset 'CY8CKIT-062-WIFI-BT' to the folder 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/deps'.
+Writing mtb file for asset 'capsense' to the folder 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs'.
+Writing mtb file for asset 'core-lib' to the folder 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs'.
+Writing mtb file for asset 'core-make' to the folder 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs'.
+Writing mtb file for asset 'mtb-hal-cat1' to the folder 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs'.
+Writing mtb file for asset 'mtb-pdl-cat1' to the folder 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs'.
+Writing mtb file for asset 'psoc6cm0p' to the folder 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs'.
+Writing mtb file for asset 'recipe-make-cat1a' to the folder 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs'.
+Writing mtb file for asset 'udb-sdio-whd' to the folder 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs'.
+Writing mtb file for asset 'retarget-io' to the folder 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/deps'.
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062-WIFI-BT TARGET_CY8CKIT-062-WIFI-BT
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/retarget-io clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/retarget-io release-v1.3.0
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/capsense clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/capsense release-v2.10.0
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/core-lib clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/core-lib release-v1.3.0
+Cloning into 'TARGET_CY8CKIT-062-WIFI-BT'...
+Cloning into 'release-v1.3.0'...
+Cloning into 'release-v2.10.0'...
+Cloning into 'release-v1.3.0'...
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/retarget-io clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/retarget-io release-v1.3.0
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/core-make clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/core-make release-v1.9.1
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/core-lib clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/core-lib release-v1.3.0
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/mtb-hal-cat1 clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/mtb-hal-cat1 release-v1.6.0
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/capsense clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/capsense release-v2.10.0
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/mtb-pdl-cat1 clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/mtb-pdl-cat1 release-v2.4.0
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062-WIFI-BT TARGET_CY8CKIT-062-WIFI-BT
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/psoc6cm0p clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/psoc6cm0p release-v2.2.0
+Cloning into 'release-v1.9.1'...
+Cloning into 'release-v1.6.0'...
+Cloning into 'release-v2.4.0'...
+Cloning into 'release-v2.2.0'...
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/core-make clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/core-make release-v1.9.1
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/recipe-make-cat1a clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/recipe-make-cat1a release-v1.9.0
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/psoc6cm0p clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/psoc6cm0p release-v2.2.0
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/udb-sdio-whd clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/udb-sdio-whd release-v1.1.1
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/mtb-hal-cat1 clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/mtb-hal-cat1 release-v1.6.0
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/retarget-io/release-v1.3.0 -c advice.detachedHead=false checkout release-v1.3.0 --force
+Cloning into 'release-v1.9.0'...
+Cloning into 'release-v1.1.1'...
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/mtb-pdl-cat1 clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/mtb-pdl-cat1 release-v2.4.0
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/core-lib/release-v1.3.0 -c advice.detachedHead=false checkout release-v1.3.0 --force
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/udb-sdio-whd clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/udb-sdio-whd release-v1.1.1
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/capsense/release-v2.10.0 -c advice.detachedHead=false checkout release-v2.10.0 --force
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/recipe-make-cat1a clone --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/recipe-make-cat1a release-v1.9.0
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs/TARGET_CY8CKIT-062-WIFI-BT -c advice.detachedHead=false checkout release-v2.3.0 --force
+HEAD is now at a61cd7c Upload retarget-io 1.3.0.25183
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/retarget-io/release-v1.3.0 -c advice.detachedHead=false checkout release-v1.3.0 --force
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/core-make/release-v1.9.1 -c advice.detachedHead=false checkout release-v1.9.1 --force
+HEAD is now at 7e6892e Upload core-lib 1.3.0.25183
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/core-lib/release-v1.3.0 -c advice.detachedHead=false checkout release-v1.3.0 --force
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/psoc6cm0p/release-v2.2.0 -c advice.detachedHead=false checkout release-v2.2.0 --force
+HEAD is now at 251ade9 Upload core-make 1.9.1.3159
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/core-make/release-v1.9.1 -c advice.detachedHead=false checkout release-v1.9.1 --force
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/mtb-hal-cat1/release-v1.6.0 -c advice.detachedHead=false checkout release-v1.6.0 --force
+HEAD is now at 6556957 Upload psoc6cm0p 2.2.0.870
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/psoc6cm0p/release-v2.2.0 -c advice.detachedHead=false checkout release-v2.2.0 --force
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/mtb-pdl-cat1/release-v2.4.0 -c advice.detachedHead=false checkout release-v2.4.0 --force
+HEAD is now at 94fc99e Upload TARGET_CY8CKIT-062-WIFI-BT 2.3.0.24609
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs/TARGET_CY8CKIT-062-WIFI-BT -c advice.detachedHead=false checkout release-v2.3.0 --force
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/udb-sdio-whd/release-v1.1.1 -c advice.detachedHead=false checkout release-v1.1.1 --force
+HEAD is now at 8177daa Upload udb-sdio-whd 1.1.1.19666
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/udb-sdio-whd/release-v1.1.1 -c advice.detachedHead=false checkout release-v1.1.1 --force
+Starting: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/recipe-make-cat1a/release-v1.9.0 -c advice.detachedHead=false checkout release-v1.9.0 --force
+HEAD is now at 656d8c5 Upload recipe-make-cat1a 1.9.0.2249
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/recipe-make-cat1a/release-v1.9.0 -c advice.detachedHead=false checkout release-v1.9.0 --force
+HEAD is now at 83898bb Upload capsense 2.10.0.725
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/capsense/release-v2.10.0 -c advice.detachedHead=false checkout release-v2.10.0 --force
+HEAD is now at f468ebe Upload mtb-hal-cat1 1.6.0.22384
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/mtb-hal-cat1/release-v1.6.0 -c advice.detachedHead=false checkout release-v1.6.0 --force
+HEAD is now at 3c6aebd Upload mtb-pdl-cat1 2.4.0.14850
+Success: git -C C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/mtb-pdl-cat1/release-v2.4.0 -c advice.detachedHead=false checkout release-v2.4.0 --force
+Writing the file 'C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/RTC/libs/app.mk'.
+Successfully committed changes to the project 'mtb-example-psoc6-rtc-basics'.
+Project "RTC" created successfully.
+Successfully created "RTC" application.
+Note: The 'RTC' application uses the ModusToolbox 2.x format. This application does not support 3.x features. See KBA236134 for instructions on how to migrate the application for 3.x content compatibility.
+==============================================================================
+= Export "RTC" application to Eclipse IDE for ModusToolbox™ =
+==============================================================================
+make eclipse CY_IDE_PRJNAME=RTC CY_MAKE_IDE=eclipse CY_MAKE_IDE_VERSION=3.2 CY_TOOLS_PATHS=C:/Users/mauro/ModusToolbox/tools_3.2 MTB_MAKE_ECLIPSE_FORCE_REGENERATE_PROJECT=1
+Tools Directory: C:/Users/mauro/ModusToolbox/tools_3.2
+Searching installed tools in progress...
+Searching installed tools complete
+CY8CKIT-062-WIFI-BT.mk: ./libs/TARGET_CY8CKIT-062-WIFI-BT/CY8CKIT-062-WIFI-BT.mk
+Running device-configurator to update stale files...
+[INFO] Log file= "C:/Users/mauro/AppData/Local/Temp/device-configurator-cli/device-configurator-cli-20250821.134411.546-13580.log"
+
+[INFO] Command line= "C:/Users/mauro/ModusToolbox/tools_3.2/device-configurator/device-configurator-cli.exe --library ../mtb_shared/mtb-pdl-cat1/release-v2.4.0/devicesupport.xml --build ./libs/TARGET_CY8CKIT-062-WIFI-BT/COMPONENT_BSP_DESIGN_MODUS/design.modus --check-mcu=CY8C6247BZI-D54 --check-coprocessors=CYW4343WKUBG --readonly"
+
+[INFO] Log file= "C:/Users/mauro/AppData/Local/Temp/hardware-config-server/hardware-config-server-20250821.134411.830-13856.log"
+
+[INFO] Command line= "C:/Users/mauro/ModusToolbox/tools_3.2/hardware-config-server/hardware-config-server.exe --config ./libs/TARGET_CY8CKIT-062-WIFI-BT/COMPONENT_BSP_DESIGN_MODUS/design.modus"
+
+[INFO] Library paths:  "C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/mtb-pdl-cat1/release-v2.4.0/devicesupport.xml"
+
+[INFO] Loaded data ( 2065  ms)
+
+[INFO] Server starting...
+
+[INFO] Client connected.
+
+WARNING:An older file format was detected. The file can be safely viewed but saving the file in this tool will update its format making it no longer open in older tools.
+
+
+Last saved with: Configurator Backend 2.2.0.2790
+Current: 'Configurator Backend 3.20.0' from 'ModusToolbox 3.2.0'[./libs/TARGET_CY8CKIT-062-WIFI-BT/COMPONENT_BSP_DESIGN_MODUS/design.modus]
+
+[INFO] Server log file= "C:/Users/mauro/AppData/Local/Temp/hardware-config-server/hardware-config-server-20250821.134411.830-13856.log"
+
+[INFO] Opened file= "./libs/TARGET_CY8CKIT-062-WIFI-BT/COMPONENT_BSP_DESIGN_MODUS/design.modus"
+
+[INFO] Libraries= "[Command Line Override] C:/Git/realtimeMultiSensorLogger/firmware/testCodes/RTC/mtb_shared/mtb-pdl-cat1/release-v2.4.0/devicesupport.xml"
+
+[INFO] "The file was last saved with a different version of the tools than will be used to perform code generation on save. Last saved with: Configurator Backend 2.2.0.2790. Current: 'Configurator Backend 3.20.0' from 'ModusToolbox 3.2.0'."
+
+[INFO] Client disconnected.
+
+-> Generated device configuration file(s) in ./libs/TARGET_CY8CKIT-062-WIFI-BT/COMPONENT_BSP_DESIGN_MODUS/GeneratedSource
+Prebuild operations complete
+Commencing build operations...
+Tools Directory: C:/Users/mauro/ModusToolbox/tools_3.2
+CY8CKIT-062-WIFI-BT.mk: ./libs/TARGET_CY8CKIT-062-WIFI-BT/CY8CKIT-062-WIFI-BT.mk
+[INFO] Server exiting...
+
+Initializing build: mtb-example-psoc6-rtc-basics Debug CY8CKIT-062-WIFI-BT GCC_ARM
+Auto-discovery in progress...
+-> Found 215 .c file(s)
+-> Found 46 .S file(s)
+-> Found 22 .s file(s)
+-> Found 0 .cpp file(s)
+-> Found 0 .o file(s)
+-> Found 6 .a file(s)
+-> Found 572 .h file(s)
+-> Found 0 .hpp file(s)
+-> Found 0 resource file(s)
+Applying filters...
+Auto-discovery complete
+Constructing build rules...
+Build rules construction complete
+==============================================================================
+= Generating IDE files =
+==============================================================================
+Generated Eclipse launch config files:  "RTC Attach (JLink).launch" "RTC Attach (KitProg3_MiniProg4).launch" "RTC Debug (JLink).launch" "RTC Debug (KitProg3_MiniProg4).launch" "RTC Erase (JLink).launch" "RTC Erase (KitProg3_MiniProg4).launch" "RTC Program (JLink).launch" "RTC Program (KitProg3_MiniProg4).launch"
+  
+The application "RTC" was successfully exported to Eclipse IDE for ModusToolbox™.
+0 error(s), 1 warning(s)
+
+Summary:
+
+Successfully created and exported "RTC" application.
