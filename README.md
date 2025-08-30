@@ -14,68 +14,98 @@
 
 # Real-Time multi data sensor logger
 
-![Overzicht](./resources/media/Overview.jpg)
+![Overzicht](./resources/media/banner.png)
 
 ## About the Project
 
-This project will utilize the PSoC 6 pioneer Kit (CY8CKIT-062-WiFi-BT) to collect data and show it on the build in display.
+This project will log sensor data using the **PSoC 6 Pioneer Kit (CY8CKIT-062-WiFi-BT)**.  
+The system collects data from **analog, digital, and I²C sensors**, timestamps it (**RTC**), and uploads it to **Firebase Realtime Database** for monitoring.  
+The system uses internal sensors (Ambient Light Sensor, Motion Sensor, PDM Microphone) and external sensors.
 
 ### Sequence of Operation
 
-This section explains what to expect once all hardware and software has been set up according to **Getting Started**. It is intended as a guide for non-technical users.
+1. **Sensor capture**
+    - Ambient Light Sensor (ALS) via ADC
+    - Motion sensor (IMU) via I²C
+    - PMD Microphone
+    - External sensor
 
-1. Connect the board to your computer via USB.
-2. The green LED will automatically turn on to indicate the system is active.
-3. A welcome message will appear in the serial terminal.
-4. The linear slider performs an automatic calibration and moves to the center.
-5. Wait for a beep signal and then place the phone on the slider holder.
+2. **Timestamping**
+    - Data is timestamped using the **Real-Time Clock(RTC)**.
 
-Follow any additional instructions shown in the terminal or on the interface.
+3. **Data logging**
+    - Data is send using the JSON format {timestamp: "2024-05-20T14:30:00", light: 320, motion: 1.2, sound: 65}
+    - Primary: Periodic upload (every 10 seconds) to **Firebase Realtime Database** in JSON format.
+    - Backup: Store data in on-chip **flash memory** in case of a network failure.
 
+4. **User Interface**
+    - **TFT Display**: Shows live sensor data values.
+    - **Status LED**:
+        - Green: Network connected / Firebase connected
+        - Red: Network Error / Firebase Error (Local flash memory active)
 
 
 ## Materials and Methods
 
-> 💡**Version-Control-Friendly Practices**
->
-> Use **plain text formats** like Markdown or CSV files. These are readable on GitHub and well-suited for version control.
->
-> Avoid linking to external files (e.g. datasheets or images). Instead, store them locally in a `media` or `datasheets` folder. External links can break when the source changes or if this repository is renamed, forked, or cloned.
 
 #### Hardware
 - **PSoC 6 Pioneer Kit**: (CY8CKIT-062-WiFi-BT)
+- Onboard sensors:
+  - Ambient Light Sensor
+  - IMU (motion detection via I²C)
+  - PDM Microphone
+- TFT Display
+- Status LEDs
+- External sensors (optional: analog, digital, I²C)
 
 #### Software
-- **Software**: overview of languages, libraries and tools used.
-- **Methodology**: brief description of the approach taken.
+- **ModusToolbox** for firmware development
+- **Firebase** for Realtime Database
+- Wi-Fi HTTP requests for data transfer
+- Error handling and flash fallback
+- RTC for timestamping
 
 
 
 ## Results
+- Successfully acquired data from ALS, IMU, and PDM microphone.
+- Real-time data uploaded to Firebase in structured JSON format:
+  ```json
+  {
+    "timestamp": "2025-07-20T14:30:00",
+    "light": 320,
+    "motion": 1.2,
+    "sound": 65
+  }
 
-- Summary of key findings.
-- Include charts, tables, or images as needed.
-- Reflections on performance or reliability.
+- TFT display shows live measurements.
+- LED indicators provide real-time status feedback.
+- Local flash storage ensures no data loss during network failures.
 
 
 
 ## Getting Started
 
-Nothing more frustrating than finding good code but not knowing how to run it.
+### Prerequisites
 
-- [ ] Provide a step-by-step how-to guide here.
-- [ ] Explain how to run the program.
+- PSoC 6 Pioneer Kit (CY8CKIT-062-WiFi-BT)
+- ModusToolbox IDE
+- Firebase project with Realtime Database enabled
+- Wi-Fi credentials for device connectivity
+
+### Installation
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/MauroDeBruyn/realtimeMultiSensorLogger
+2. Open the project in ModusToolbox IDE.
+3. Configure Firebase connection (database URL).
+4. Build and flash the firmware to the PSoC 6 board.
+5. Connect the board to Wi-Fi and monitor real-time data on Firebase.
 
 
-
-## Future Work and Issues
-
-- Planned extensions or improvements.
-- Known bugs or limitations.
-- Link to a issue if applicable, for example #1
-
+## Issues
+- Add support for more external sensors.
 
 
 ## People
-
-- **Contri Butor1** – Mauro De Bruyn – [GitHub](https://github.com/CONTRIBUTOR1)
+- **Contributor** – Mauro De Bruyn – [GitHub](https://github.com/maurodebruyn)
