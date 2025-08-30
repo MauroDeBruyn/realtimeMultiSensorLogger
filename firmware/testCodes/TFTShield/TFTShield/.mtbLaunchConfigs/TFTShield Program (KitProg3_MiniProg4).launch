@@ -47,10 +47,10 @@
     <intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="2"/>
     <stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
     <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="${cy_prj_path}/build/CY8CKIT-062-WIFI-BT/Debug/mtb-example-psoc6-empty-app.hex"/>
-    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="PDM"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="TFTShield"/>
     <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-        <listEntry value="/PDM"/>
+        <listEntry value="/TFTShield"/>
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="4"/>

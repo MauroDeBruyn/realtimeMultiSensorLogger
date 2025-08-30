@@ -1,5 +1,9 @@
 [
     {
+        "asset-name": "audio-codec-wm8960",
+        "locked-commit": "release-v1.0.0"
+    },
+    {
         "asset-name": "capsense",
         "locked-commit": "release-v3.0.0"
     },
@@ -10,6 +14,10 @@
     {
         "asset-name": "core-make",
         "locked-commit": "release-v1.9.1"
+    },
+    {
+        "asset-name": "display-oled-ssd1306",
+        "locked-commit": "release-v1.0.1"
     },
     {
         "asset-name": "mtb-hal-cat1",
@@ -26,6 +34,14 @@
     {
         "asset-name": "recipe-make-cat1a",
         "locked-commit": "release-v1.9.0"
+    },
+    {
+        "asset-name": "sensor-orientation-bmx160",
+        "locked-commit": "release-v1.0.1"
+    },
+    {
+        "asset-name": "sensor-xensiv-dps3xx",
+        "locked-commit": "release-v1.0.0"
     },
     {
         "asset-name": "udb-sdio-whd",

@@ -1,0 +1,70 @@
+[
+    {
+        "asset-name": "abstraction-rtos",
+        "locked-commit": "release-v1.5.0"
+    },
+    {
+        "asset-name": "aws-iot-device-sdk-port",
+        "locked-commit": "release-v2.2.1"
+    },
+    {
+        "asset-name": "capsense",
+        "locked-commit": "release-v3.0.0"
+    },
+    {
+        "asset-name": "clib-support",
+        "locked-commit": "release-v1.2.0"
+    },
+    {
+        "asset-name": "connectivity-utilities",
+        "locked-commit": "release-v3.2.0"
+    },
+    {
+        "asset-name": "core-lib",
+        "locked-commit": "release-v1.3.0"
+    },
+    {
+        "asset-name": "core-make",
+        "locked-commit": "release-v1.9.1"
+    },
+    {
+        "asset-name": "cy-mbedtls-acceleration",
+        "locked-commit": "release-v1.4.0"
+    },
+    {
+        "asset-name": "freertos",
+        "locked-commit": "release-v10.4.302"
+    },
+    {
+        "asset-name": "mtb-hal-cat1",
+        "locked-commit": "release-v2.1.0"
+    },
+    {
+        "asset-name": "mtb-pdl-cat1",
+        "locked-commit": "release-v2.4.0"
+    },
+    {
+        "asset-name": "psoc6cm0p",
+        "locked-commit": "release-v2.2.0"
+    },
+    {
+        "asset-name": "recipe-make-cat1a",
+        "locked-commit": "release-v1.9.0"
+    },
+    {
+        "asset-name": "udb-sdio-whd",
+        "locked-commit": "release-v1.1.1"
+    },
+    {
+        "asset-name": "whd-bsp-integration",
+        "locked-commit": "release-v2.0.0"
+    },
+    {
+        "asset-name": "wifi-host-driver",
+        "locked-commit": "release-v2.3.0"
+    },
+    {
+        "asset-name": "wpa3-external-supplicant",
+        "locked-commit": "release-v1.0.0"
+    }
+]

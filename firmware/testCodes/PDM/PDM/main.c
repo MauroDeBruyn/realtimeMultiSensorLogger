@@ -1,65 +1,79 @@
-/******************************************************************************
-* File Name:   main.c
-*
-* Description: This is the source code for the Empty PSoC6 Application
-*              for ModusToolbox.
-*
-* Related Document: See README.md
-*
-*
-*******************************************************************************
-* (c) 2019-2021, Cypress Semiconductor Corporation. All rights reserved.
-*******************************************************************************
-* This software, including source code, documentation and related materials
-* ("Software"), is owned by Cypress Semiconductor Corporation or one of its
-* subsidiaries ("Cypress") and is protected by and subject to worldwide patent
-* protection (United States and foreign), United States copyright laws and
-* international treaty provisions. Therefore, you may use this Software only
-* as provided in the license agreement accompanying the software package from
-* which you obtained this Software ("EULA").
-*
-* If no EULA applies, Cypress hereby grants you a personal, non-exclusive,
-* non-transferable license to copy, modify, and compile the Software source
-* code solely for use in connection with Cypress's integrated circuit products.
-* Any reproduction, modification, translation, compilation, or representation
-* of this Software except as specified above is prohibited without the express
-* written permission of Cypress.
-*
-* Disclaimer: THIS SOFTWARE IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND,
-* EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT, IMPLIED
-* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Cypress
-* reserves the right to make changes to the Software without notice. Cypress
-* does not assume any liability arising out of the application or use of the
-* Software or any product or circuit described in the Software. Cypress does
-* not authorize its products for use in any products where a malfunction or
-* failure of the Cypress product may reasonably be expected to result in
-* significant property damage, injury or death ("High Risk Product"). By
-* including Cypress's product in a High Risk Product, the manufacturer of such
-* system or application assumes all risk of such use and in doing so agrees to
-* indemnify Cypress against all liability.
-*******************************************************************************/
-
 #include "cy_pdl.h"
 #include "cyhal.h"
 #include "cybsp.h"
+#include "cy_retarget_io.h"
 
+#define UART_BAUD             (115200)
+#define PCM_SAMPLE_RATE_HZ    (16000)
+#define DECIMATION_RATE       (64)
+#define PCM_WORD_LEN_BITS     (16)
+#define FRAME_SAMPLES         (256)
+#define PDM_LEFT_GAIN_DB      (12)
+#define PDM_RIGHT_GAIN_DB     (12)
 
-int main(void)
+#define PDM_DATA_PIN          (P10_5)   // DATA van mic (shield)
+#define PDM_CLK_PIN           (P10_4)   // CLK naar mic  (shield)
+
+static cyhal_pdm_pcm_t pdm;
+static int16_t pcm_buf[FRAME_SAMPLES];
+
+static void pdm_init(void)
 {
-    cy_rslt_t result;
+    cy_rslt_t rslt;
+    const cyhal_pdm_pcm_cfg_t cfg = {
+        .sample_rate     = PCM_SAMPLE_RATE_HZ,
+        .decimation_rate = DECIMATION_RATE,
+        .mode            = CYHAL_PDM_PCM_MODE_RIGHT, // mic gedraagt zich als RIGHT
+        .word_length     = PCM_WORD_LEN_BITS,
+        .left_gain       = PDM_LEFT_GAIN_DB,
+        .right_gain      = PDM_RIGHT_GAIN_DB
+    };
 
-    /* Initialize the device and board peripherals */
-    result = cybsp_init() ;
-    if (result != CY_RSLT_SUCCESS)
-    {
+    rslt = cyhal_pdm_pcm_init(&pdm, PDM_DATA_PIN, PDM_CLK_PIN, NULL, &cfg);
+    if (rslt != CY_RSLT_SUCCESS) {
+        printf("PDM init failed: 0x%08lx\r\n", (unsigned long)rslt);
         CY_ASSERT(0);
     }
-
-    __enable_irq();
-
-    for (;;)
-    {
+    rslt = cyhal_pdm_pcm_start(&pdm);
+    if (rslt != CY_RSLT_SUCCESS) {
+        printf("PDM start failed: 0x%08lx\r\n", (unsigned long)rslt);
+        CY_ASSERT(0);
     }
 }
 
-/* [] END OF FILE */
+static size_t pdm_read_blocking(int16_t *dst, size_t want)
+{
+    size_t filled = 0;
+    while (filled < want) {
+        size_t n = want - filled;
+        cy_rslt_t r = cyhal_pdm_pcm_read(&pdm, &dst[filled], &n);
+        if (r != CY_RSLT_SUCCESS) {
+            printf("read err: 0x%08lx\r\n", (unsigned long)r);
+            break;
+        }
+        filled += n;
+    }
+    return filled;
+}
+
+int main(void)
+{
+    cy_rslt_t rslt = cybsp_init();
+    if (rslt != CY_RSLT_SUCCESS) { CY_ASSERT(0); }
+    __enable_irq();
+
+    rslt = cy_retarget_io_init(CYBSP_DEBUG_UART_TX, CYBSP_DEBUG_UART_RX, UART_BAUD);
+    if (rslt != CY_RSLT_SUCCESS) { CY_ASSERT(0); }
+
+    printf("\r\nPDM->PCM demo start (mono RIGHT, 16kHz)\r\n");
+    pdm_init();
+
+    for (;;) {
+        size_t filled = pdm_read_blocking(pcm_buf, FRAME_SAMPLES);
+        printf("PCM[%u]: ", (unsigned)filled);
+        size_t show = filled < 12 ? filled : 12;
+        for (size_t i = 0; i < show; ++i) printf("%d ", (int)pcm_buf[i]);
+        printf("...\r\n");
+        cyhal_system_delay_ms(2);
+    }
+}
