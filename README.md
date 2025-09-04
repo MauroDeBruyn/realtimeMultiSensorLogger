@@ -82,6 +82,15 @@ The system uses internal sensors (Ambient Light Sensor, Motion Sensor, PDM Micro
 - LED indicators provide real-time status feedback.
 - Local flash storage ensures no data loss during network failures.
 
+  
+## Documentation and files
+  - My personal Database that was used for this project can be found [here](https://console.firebase.google.com/u/0/project/psoc6-logger/database/psoc6-logger-default-rtdb/data/~2F)
+  - The ModusToolbox code can be found [here](./firmware/mainCode)
+  - [The application note](./documentation)
+  - [The presentation](./resources/presentations)
+  - [Datasheets](./resources/datasheets)
+  - [The project requirements](./documentation/projectInformation.md)
+
 
 
 ## Getting Started
